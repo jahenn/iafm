@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="guiberraMX">
+
+    <meta name="description" content="Soldadura especializada INOX · ALUMINIO · ACERO · MONTAJE">
+
+
+    <meta name="google-site-verification" content="a6JoGMoqNsUgToHvgQo48yV5JqRq2DqsdQLclXc_Wgw" />
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/jquery.slider.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/owl.transitions.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:200,300,600,400,700,900' rel='stylesheet' type='text/css'>
+    
+    <script type="text/javascript" src="/assets/js/angular.min.js"></script>
+    <script type="text/javascript" src="/assets/js/angular-route.min.js"></script>
+    
+    
+    <script type="text/javascript">
+        var app = angular.module("app", ["ngRoute"]);
+        app.config(function($routeProvider){
+            $routeProvider
+            .when("/:language", {
+                templateUrl: "languageTemplate",
+                controller: "languageController"
+            })
+            .otherwise({
+                redirectTo: "/es"
+            });
+        });
+        app.controller("controller", function($scope){ });
+        app.controller("languageController", function($scope, $routeParams, $http){
+             var idioma = $routeParams.language || "es";
+            $http.get("/home_language", {
+                params: {
+                    language: idioma
+                }
+            }).success(function(data){
+                $scope.$parent.lang = data;
+                $scope.$parent.lang_str = idioma;
+            });
+        });
+    </script>
+    
+    
+    <title>I.A.F.M.</title>
+
+</head>
+
+<body class=" page-homepage navigation-fixed-top page-slider" id="page-top" data-spy="scroll" data-target=".navigation" data-offset="90">
+<!-- Wrapper -->
+<div class="  wrapper" data-ng-app="app" data-ng-controller="controller">
+    <script type="text/ng-template" id="languageTemplate"></script>
+    <ng-view></ng-view>
+    <div class="navigation fibredark ">
+        <div class="secondary-navigation idioma">
+            <div class="container">
+                <div class="contact">
+                <br>
+                
+                    
+                </div>
+                <div class="user-area">
+                    <div class="actions">
+                        
+                    </div>
+                    <div class="language-bar">
+                        <a href="#/es" class="active"><img src="assets/img/flags/gb.png" alt="">Español</a>
+                        <a href="#/de"><img src="assets/img/flags/de.png" alt="">Deuch</a>
+                        <a href="#"><img src="assets/img/flags/es.png" alt=""></a>
+                    </div>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse navbar-left" role="navigation">
+                    <ul class="nav navbar-nav nave" >
+                        <li><a href="mig.html#/{{lang_str}}">{{lang.menu1}}</a></li>
+                        <li><a href="tig.html#/{{lang_str}}">{{lang.menu2}}</a></li>
+                        <li><a href="electro.html#/{{lang_str}}">{{lang.menu3}}</a></li>
+                        <li><a href="calor.html#/{{lang_str}}">{{lang.menu4}}</a></li>
+                        <li><a href="montaje.html#/{{lang_str}}">{{lang.menu5}}</a></li>
+                        <li><a href="automatizacion.html#/{{lang_str}}">{{lang.menu6}}</a></li>
+                        <li><a href="nosotros.html#/{{lang_str}}">{{lang.menu7}}</a></li>
+                        <li><a href="contacto.html#/{{lang_str}}">{{lang.menu8}}</a></li>
+                    </ul>
+                </nav><!-- /.navbar collapse-->
+            </div>
+        </div>
+        <div class="container">
+            <header class="navbar" id="top" role="banner">
+                
+
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand nav" id="brand">
+                        <a href="index.html#/{{lang_str}}"><img src="assets/img/logo.png" width="28%" alt="brand"></a>
+                    </div>
+                </div>
+                
+                
+            </header><!-- /.navbar -->
+        </div><!-- /.container -->
+    </div><!-- /.navigation -->
+
+    <!-- Slider -->
+    <div id="slider" class="loading has-parallax">
+        <div id="loading-icon"><i class="fa fa-cog fa-spin"></i></div>
+        <div class="owl-carousel homepage-slider carousel-full-width">
+            <div class="slide">
+                <div class="container">
+                    <div class="overlay">
+                        <div class="info">
+                            <div class="tag price">{{lang.slide1_title}}</div>
+                            <h3>{{lang.slide1_tile}}</h3>
+                            <figure></figure>
+                        </div>
+                        <hr>
+                        
+                    </div>
+                </div>
+                <img alt="" src="assets/img/slide-01.jpg">
+            </div>
+
+            <div class="slide">
+                <div class="container">
+                    <div class="overlay">
+                        <div class="info">
+                            <div class="tag price">{{lang.slide2_title}}</div>
+                            <h3>{{lang.slide2_tile}}</h3>
+                            <figure></figure>
+                        </div>
+                        <hr>
+                        
+                    </div>
+                </div>
+                <img alt="" src="assets/img/slide-02.jpg">
+            </div>
+
+
+            <div class="slide">
+                <div class="container">
+                    <div class="overlay">
+                        <div class="info">
+                            <div class="tag price">{{slide3.title}}</div>
+                            <h3>{{slide3.title}}</h3>
+                            <figure></figure>
+                        </div>
+                        <hr>
+                        
+                    </div>
+                </div>
+                <img alt="" src="assets/img/slide-03.jpg" >
+            </div>
+
+            
+        </div>
+    </div>
+    <!-- end Slider -->
+
+    <!-- Page Content -->
+    <div class="nueva" id="page-content" >
+        <section id="banner">
+            <div class="block has-dark-background background-color-default-darker center text-banner fibredark">
+                <div class="container">
+                    <h1 class="no-bottom-margin no-border ">{{lang.titulo1}}</h1>
+                </div>
+            </div>
+        </section><!-- /#banner -->
+        
+        <section id="price-drop" class=" block">
+            <div class="container">
+                <header class="section-title">
+                    <h2>{{lang.titulo2}}</h2>
+                    
+                </header>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="property">
+                            <a href="mig.html">
+                                <div class="property-image">
+                                    <img alt="" src="assets/img/properties/property-06.jpg">
+                                </div>
+                                <div class="overlay">
+                                    <div class="info">
+                                        <div class="tag price">{{lang.tile1}}</div>
+                                        
+                                        <figure></figure>
+                                    </div>
+                                    <ul class="additional-info">
+                                        <li>
+                                            <figure><h3>{{lang.tile1_desc}}</h3></figure>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </a>
+                        </div><!-- /.property -->
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="property">
+                            <a href="tig.html">
+                                <div class="property-image">
+                                    <img alt="" src="assets/img/properties/tige1.jpg">
+                                </div>
+                                <div class="overlay">
+                                    <div class="info">
+                                        <div class="tag price">{{lang.tile2}}</div>
+                                        <figure></figure>
+                                    </div>
+                                    <ul class="additional-info">
+                                        <li>
+                                            <figure><h3>{{lang.tile2_desc}}</h3></figure>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </a>
+                        </div><!-- /.property -->
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="property">
+                            <a href="electro.html">
+                                <div class="property-image">
+                                    <img alt="" src="assets/img/properties/property-07.jpg">
+                                </div>
+                                <div class="overlay">
+                                    <div class="info">
+                                        <div class="tag price">{{lang.tile3}}</div>
+                                        
+                                        <figure></figure>
+                                    </div>
+                                    <ul class="additional-info">
+                                        <li>
+                                            <figure><h3>{{lang.tile3_desc}}</h3></figure>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </a>
+                        </div><!-- /.property -->
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="property">
+                            <a href="calor.html">
+                                <div class="property-image">
+                                    <img alt="" src="assets/img/properties/property-08.jpg">
+                                </div>
+                                <div class="overlay">
+                                    <div class="info">
+                                        <div class="tag price">{{lang.tile4}}</div>
+                                        
+                                        <figure></figure>
+                                    </div>
+                                    <ul class="additional-info">
+                                        <li>
+                                            <figure><h3>{{lang.tile4_desc}}</h3></figure>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </a>
+                        </div><!-- /.property -->
+                    </div><!-- /.col-md-3 -->
+                </div><!-- /.row-->
+            </div><!-- /.container -->
+        </section><!-- /#price-drop -->
+        
+        <section id="new-properties" class="block">
+            <div class="container">
+                <header class="section-title">
+                    <h2>{{lang.title2}}</h2>
+                    
+                </header>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="property">
+                            <a href="peru.html">
+                                <div class="property-image">
+                                    <img alt="" src="assets/img/properties/property-09.jpg">
+                                </div>
+                                <div class="overlay">
+                                    <div class="info">
+                                        <div class="tag price">{{lang.tile5}}</div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                        </div><!-- /.property -->
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="property">
+                            <a href="montaje.html">
+                                <div class="property-image">
+                                    <img alt="" src="assets/img/properties/mon1.jpg">
+                                </div>
+                                <div class="overlay">
+                                    <div class="info">
+                                        <div class="tag price">{{lang.tile6}}</div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                        </div><!-- /.property -->
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="property">
+                            <a href="mig.html">
+                                <div class="property-image">
+                                    <img alt="" src="assets/img/properties/property-06.jpg">
+                                </div>
+                                <div class="overlay">
+                                    <div class="info">
+                                        <div class="tag price">{{lang.tile7}}</div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                        </div><!-- /.property -->
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="property">
+                            <a href="palme.html">
+                                <div class="property-image">
+                                    <img alt="" src="assets/img/properties/property-01.jpg">
+                                </div>
+                                <div class="overlay">
+                                    <div class="info">
+                                        <div class="tag price">{{lang.tile8}}</div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                        </div><!-- /.property -->
+                    </div><!-- /.col-md-3 -->
+                </div><!-- /.row-->
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="property">
+                            <a href="mmontaje.html">
+                                <div class="property-image">
+                                    <img alt="" src="assets/img/aud.jpg">
+                                </div>
+                                <div class="overlay">
+                                    <div class="info">
+                                        <div class="tag price">{{lang.tile9}}</div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                        </div><!-- /.property -->
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="property">
+                            <a href="mig.html">
+                                <div class="property-image">
+                                    <img alt="" src="assets/img/slide-011.jpg">
+                                </div>
+                                <div class="overlay">
+                                    <div class="info">
+                                        <div class="tag price">{{lang.tile10}}</div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                        </div><!-- /.property -->
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="property">
+                            <a href="monterrey.html">
+                                <div class="property-image">
+                                    <img alt="" src="assets/img/properties/monte1.jpg">
+                                </div>
+                                <div class="overlay">
+                                    <div class="info">
+                                        <div class="tag price">{{lang.tile10}}</div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                        </div><!-- /.property -->
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="property">
+                            <a href="calor.html">
+                                <div class="property-image">
+                                    <img alt="" src="assets/img/properties/property-10.jpg">
+                                </div>
+                                <div class="overlay">
+                                    <div class="info">
+                                        <div class="tag price">{{lang.tile11}}</div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                        </div><!-- /.property -->
+                    </div><!-- /.col-md-3 -->
+                </div><!-- /.row-->
+            </div><!-- /.container-->
+        </section><!-- /#new-properties-->
+
+        <aside id="advertising" class="block">
+            <div class="container">
+<!-- /#new-properties-->
+
+<!-- /#new-properties-->
+
+
+<!-- /#new-properties-->
+
+
+                <a href="tel:+52 (222) 230 4370">
+
+<!-- /#new-properties--><!-- /#LLAMADA!!!!!-->
+<!-- /#new-properties-->
+<!-- /#new-properties-->
+
+
+
+
+                    <div class="banner">
+
+
+                        <div class="wrapper">
+                            <p class="title"><i class="fa fa-phone"></i>{{lang.contact1}}</p>
+                            
+                        </div>
+
+
+
+                    </div><!-- /.banner-->
+                </a>
+            </div>
+        </aside><!-- /#adveritsing-->
+
+
+
+
+
+
+        </section><!-- /#testimonials -->
+
+
+
+
+
+        <section id="partners" class="block">
+            <div class="container">
+                <header class="section-title"><h2>{{lang.legend1}}</h2></header>
+                <div class="logos">
+
+
+                    <div class="logo"><a href="http://www.rofa-ag.de/en/moll-automatisierung" target="_blank"><img src="assets/img/logo-partner-01.png" alt=""></a></div>
+
+
+                    <div class="logo"><a href="http://www.ferrobotics.at/" target="_blank"> <img src="assets/img/logo-partner-02.png" alt=""></a></div>
+                    
+                    <div class="logo"><a href="http://www.audi.com.mx/mx/brand/es2.html" target="_blank"><img src="assets/img/logo-partner-04.png" alt=""></a></div>
+
+                    <div class="logo"><a href="http://www.vw.com.mx/es.html" target="_blank"><img src="assets/img/logo-partner-05.png" alt=""></a></div>
+
+
+                </div>
+
+
+                <div class="logos">
+
+
+                <div class="logo"><a href="http://www.palme.mx/" target="_blank"><img src="assets/img/logo-partner11.png" alt=""></a></div>
+
+
+                    <div class="logo"><a href="http://www.melon.cl/" target="_blank"> <img src="assets/img/logo-partner12.png" alt=""></a></div>
+                    
+                    <div class="logo"><a href="http://www.argos.co/Colombia" target="_blank"><img src="assets/img/logo-partner13.png" alt=""></a></div>
+
+
+                    
+                </div>
+            </div><!-- /.container -->
+        </section>
+
+
+
+
+
+
+        <!-- /#partners -->
+    </div>
+
+
+
+
+    <!-- end Navigation -->
+    <!-- Page Content -->
+    <div id="page-content " class=" colorea">
+        <!-- Breadcrumb -->
+        
+        <!-- end Breadcrumb -->
+
+        <section  id="banner" class="">
+            <div class=" block has-dark-background background-color-default-darker center text-banner fibredark">
+                <div class="container">
+                    <img src="assets/img/icono.png" width="20%">
+                    <h1 class="no-bottom-margin no-border">{{lang.legend2}}<a href="nosotros.html" class="text-underline">{{lang.legend2_link}}</a>!</h1>
+                </div>
+            </div>
+        </section><!-- /#banner -->
+
+        <div class="container ">
+            <section class="center submission-message">
+                <header>{{lang.legend3}}</header>
+                <br>
+                <p class="collr">
+                    {{lang.legend4_1}}
+                    <br>
+                    {{lang.legend4_2}}
+                    <br>
+                    {{lang.legend4_3}}
+                    <br>
+                <p>
+               
+               
+
+                <a href="contacto.html" class="link-arrow">{{lang.legend5}}</a>
+            </section>
+
+
+
+
+
+            <section id="price-drop" class=" block">
+            <div class="container cuadrito ">
+                <header class="section-title">
+                    <h2>{{lang.legend6}}</h2>
+                    
+                </header>
+                <div class="row">
+                    <div class="col-md-4 col-sm-8 ">
+                        <div class="property">
+                            <a href="mig.html">
+                                <div class="premio property-image">
+                                    <a class="premio22">TUV Technischer 
+
+                                    <a> <br><br>
+ Prüfungsbescheinigung nach DIN 8560 </a>
+                                </div>
+                                <div class="overlay">
+
+                                    
+                                </div>
+                            </a>
+                        </div><!-- /.property -->
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-4 col-sm-8 ">
+                        <div class="property">
+                            <a href="tig.html">
+                                <div class="premio property-image">
+                                    <a class="premio22">Schulungszentrum Fohnsdorf </a>
+                                    
+                                    <a><br><br>
+Blechschweisserprüfung Ö-Norm M7808 EBIIm</a>
+
+
+
+                                </div>
+                                <div class="overlay">
+                                    
+                                    
+                                </div>
+                            </a>
+                        </div><!-- /.property -->
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-4 col-sm-8 ">
+                        <div class="property">
+                            <a href="electro.html">
+                                <div class="premio property-image">
+                                    <a class="premio22">Schulungszentrum Fohnsdorf</a>
+                                    
+                                    <a> <br><br>
+Rohr Schweissprufung Wig-Mig-Mag = 45º</a>
+
+
+                                </div>
+                                <div class="overlay">
+                                    
+                                    
+                                </div>
+                            </a>
+                        </div><!-- /.property -->
+                    </div><!-- /.col-md-3 -->
+                    
+                </div><!-- /.row-->
+            </div><!-- /.container -->
+        </section><!-- /#price-drop -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div><!-- /.container -->
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <div id="page-content " class="cocolor">
+        <!-- Breadcrumb -->
+        
+        <!-- end Breadcrumb -->
+
+        <div class=" container">
+            <div class="row">
+                <!-- Contact -->
+                
+
+
+                <div class="col-md-9 col-sm-9 ">
+                    <section id="agent-detail">
+
+
+                        <header><br><h1>{{lang.legend7}}</h1></header>
+                        <!-- /#agent-info -->
+                        
+                        <section id="form">
+                            <header><h3>{{lang.legend8}}</h3></header>
+                            <form role="form" id="form-contact" method="post"  class="clearfix">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form-contact-name">{{lang.contact1}}<em>*</em></label>
+                                            <input type="text" class="form-control" id="form-contact-name" name="form-contact-name" required>
+                                        </div><!-- /.form-group -->
+                                    </div><!-- /.col-md-6 -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form-contact-email">{{lang.contact2}}<em>*</em></label>
+                                            <input type="email" class="form-control" id="form-contact-email" name="form-contact-email" required>
+                                        </div><!-- /.form-group -->
+                                    </div><!-- /.col-md-6 -->
+                                </div><!-- /.row -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form-contact-message">{{lang.contact3}}<em>*</em></label>
+                                            <textarea class="form-control" id="form-contact-message" rows="8" name="form-contact-message" required></textarea>
+                                        </div><!-- /.form-group -->
+                                    </div><!-- /.col-md-12 -->
+                                </div><!-- /.row -->
+                                <div class="form-group clearfix">
+                                    <button type="submit" class="btn pull-right btn-default" id="form-contact-submit">{{lang.contact_button}}</button>
+                                </div><!-- /.form-group -->
+                                <div id="form-status"></div>
+                            </form><!-- /#form-contact -->
+                        </section>
+                    </section><!-- /#agent-detail -->
+                </div><!-- /.col-md-9 -->
+                <!-- end Contact -->
+
+
+
+
+                <!-- sidebar -->
+                <div class="col-md-3 col-sm-3">
+                    <section id="sidebar">
+                        <aside id="edit-search">
+                            <header><br><h3><br></h3></header>
+                            <!-- /#form-map -->
+                        </aside><!-- /#edit-search -->
+                        <aside id="featured-properties">
+                            <section id="address">
+                                        <header><h3>{{lang.contact_label}}</h3></header>
+                                        
+                                        <a href="tel:+52 (222) 230 4370">+52 (222) 230 4370</a><br>
+                                        <a href="mailto:harald@i-afm.com">harald@i-afm.com</a><br>
+
+                                        
+                                        
+                                    </section>
+                                    <section id="social">
+                                        <header><h3>{{lang.folow_us}}</h3></header>
+                                        <div class="agent-social">
+                                            
+                                            <a href="https://www.facebook.com/pages/IAFM/698192943605665?sk=info&tab=page_info" target="blank" 
+                                            class="fa fa-facebook btn btn-grey-dark"></a>
+                                        </div>
+                                    </section><!-- /#social --><!-- /.property -->
+                        </aside><!-- /#featured-properties -->
+                        
+
+
+
+                    </section><!-- /#sidebar -->
+                </div><!-- /.col-md-3 -->
+                <!-- end Sidebar -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div>
+
+    <!-- end Page Content -->
+    <!-- Page Footer -->
+
+
+
+    <footer id="page-footer">
+        <div class="inner">
+            <aside id="footer-copyright">
+                <div class="container">
+                    <span>I.A.F.M. © 2015. All Rights Reserved.</span>
+                    <span class="pull-right"><a href="#page-top" class="roll">{{lang.go_home}}</a></span>
+                </div>
+            </aside>
+        </div><!-- /.inner -->
+    </footer>
+    <!-- end Page Footer -->
+</div>
+
+<div id="overlay"></div>
+
+<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="assets/js/icheck.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.vanillabox-0.1.5.min.js"></script>
+<script type="text/javascript" src="assets/js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+<!--[if gt IE 8]>
+<script type="text/javascript" src="assets/js/ie.js"></script>
+<![endif]-->
+
+<script>
+    $(window).load(function(){
+        initializeOwl(false);
+    });
+</script>
+</body>
+</html>

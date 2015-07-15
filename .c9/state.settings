@@ -1,0 +1,208 @@
+{
+    "ace": {
+        "search": {
+            "@backwards": "false",
+            "@highlightmatches": "true",
+            "@matchcase": "false",
+            "@preservecase": "false",
+            "@regex": "false",
+            "@wholeword": "false",
+            "@wraparound": "true"
+        }
+    },
+    "console": {
+        "@expanded": true,
+        "@height": "153",
+        "@maximized": "false",
+        "json()": {
+            "meta": {
+                "accessList": [
+                    "tab0",
+                    "tab1"
+                ]
+            },
+            "name": "pane1",
+            "nodes": [
+                {
+                    "type": "tab",
+                    "name": "tab0",
+                    "path": null,
+                    "className": [
+                        "tab0"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1430255042493
+                        },
+                        "filter": true,
+                        "title": "bash - \"kubrickodyssey\"",
+                        "tooltip": "bash - \"kubrickodyssey\"",
+                        "terminal": {
+                            "id": "devel_438",
+                            "cwd": "",
+                            "width": 1008,
+                            "height": 127
+                        }
+                    },
+                    "editorType": "terminal",
+                    "active": true
+                },
+                {
+                    "type": "tab",
+                    "name": "tab1",
+                    "path": null,
+                    "className": [],
+                    "document": {
+                        "title": "Immediate",
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1430255042494
+                        },
+                        "filter": true
+                    },
+                    "editorType": "immediate",
+                    "active": false
+                }
+            ],
+            "skin": "editor_tab",
+            "skinset": "default",
+            "type": "pane"
+        }
+    },
+    "ext": {
+        "counters": {
+            "@ace": 1,
+            "@acestatus": 1,
+            "@divider": 4,
+            "@document": 4,
+            "@form": 4,
+            "@menu": 5,
+            "@menuitem": 13,
+            "@pane": 2,
+            "@session": 3,
+            "@tab": 4,
+            "@undoManager": 4
+        }
+    },
+    "findinfiles": {
+        "@console": "true",
+        "@matchcase": "false",
+        "@regex": "false",
+        "@wholeword": "false"
+    },
+    "menus": {
+        "@minimized": "false"
+    },
+    "nak": {
+        "@installed": true
+    },
+    "panecycle": {
+        "json()": [
+            "tab3",
+            "tab0"
+        ]
+    },
+    "panels": {
+        "@active-left": "tree",
+        "commands.panel": {
+            "@enabled": "true",
+            "@name": "commands.panel"
+        },
+        "debugger": {
+            "@enabled": "true",
+            "@name": "debugger"
+        },
+        "navigate": {
+            "@enabled": "true",
+            "@name": "navigate"
+        },
+        "outline": {
+            "@enabled": "true",
+            "@name": "outline"
+        },
+        "tree": {
+            "@enabled": "true",
+            "@name": "tree"
+        }
+    },
+    "projecttree": {
+        "@showfs": true,
+        "expanded": {
+            "json()": [
+                "/assets/php",
+                "/"
+            ]
+        }
+    },
+    "search-history": {
+        "search": {
+            "json()": [
+                "main.js"
+            ]
+        }
+    },
+    "tabs": {
+        "json()": {
+            "focus": "/contacto.html",
+            "meta": {
+                "accessList": [
+                    "tab3",
+                    "tab2"
+                ]
+            },
+            "name": "pane0",
+            "nodes": [
+                {
+                    "type": "tab",
+                    "name": "tab2",
+                    "path": "/assets/php/contact.php",
+                    "className": [
+                        "tab2"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1429581049000
+                        },
+                        "filter": true,
+                        "title": "contact.php",
+                        "tooltip": "/assets/php/contact.php",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab3",
+                    "path": "/contacto.html",
+                    "className": [
+                        "tab3",
+                        "focus"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1429581657000
+                        },
+                        "filter": true,
+                        "title": "contacto.html",
+                        "tooltip": "/contacto.html",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": true
+                }
+            ],
+            "skin": "editor_tab",
+            "skinset": "default",
+            "type": "pane"
+        }
+    },
+    "tree_selection": {
+        "json()": [
+            "/contacto.html"
+        ]
+    }
+}

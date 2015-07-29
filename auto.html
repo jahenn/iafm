@@ -17,7 +17,7 @@
 
      <link href='http://fonts.googleapis.com/css?family=Titillium+Web:200,300,600,400,700,900' rel='stylesheet' type='text/css'>
 
-    <title>Área Caliente | I.A.F.M.</title>
+    <title>Automatización | I.A.F.M.</title>
 
     <style type="text/css">
 
@@ -29,22 +29,23 @@
            right: 0;
            bottom: 0;
            margin: auto auto;
+           
            height: 50px;
            width: 100%;
        }
        
        .owl-next {
            float: right;
+           color: #fff !important;
        }
        
        
    
 
     </style>
-
-   <script type="text/javascript" src="/assets/js/angular.min.js"></script>
-    <script type="text/javascript" src="/assets/js/angular-route.min.js"></script>
     
+    <script type="text/javascript" src="/assets/js/angular.min.js"></script>
+    <script type="text/javascript" src="/assets/js/angular-route.min.js"></script>
     
     <script type="text/javascript">
         var app = angular.module("app", ["ngRoute"]);
@@ -72,9 +73,13 @@
         });
     </script>
 
+   
+
 </head>
 
 <body class="page-sub-page page-property-detail" id="page-top">
+
+
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -86,11 +91,13 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
+
+
+
 <!-- Wrapper -->
 <div class="wrapper" data-ng-app="app" data-ng-controller="controller">
     <script type="text/ng-template" id="languageTemplate"></script>
     <ng-view></ng-view>
-    
     <!-- Navigation -->
     <div class="navigation fibredark ">
         
@@ -193,8 +200,8 @@
         <!-- Breadcrumb -->
         <div class="container">
             <ol class="breadcrumb">
-                <li><a href="#">Soldadura</a></li>
-                <li class="active">En áltas temperaturas</li>
+                <li><a href="#">{{lang.auto_4}}</a></li>
+                
             </ol>
         </div>
         <!-- end Breadcrumb -->
@@ -205,90 +212,68 @@
                 <div class="col-md-9 col-sm-9">
                     <section id="property-detail">
                         <header class="property-title">
-                            <h1>{{lang.calor_title1}}</h1>
-                            <figure>{{lang.calor_subtitle1}}</figure>
+                            <h1>{{lang.menu6}}</h1>
+                            <figure>{{lang.subtitle1}}</figure>
                             <span class="actions">
                                 <!--<a href="#" class="fa fa-print"></a>-->
                                 
                             </span>
                         </header>
                         <section id="property-gallery">
-
                             <div class="owl-carousel property-carousel">
-
                                 <div class="property-slide">
-                                    <a href="assets/img/properties/property-08.jpg" class="image-popup">
+                                    <a href="assets/img/properties/auto1.jpg" class="image-popup">
                                         <div class="overlay"><h3></h3></div>
-                                        <img alt="" src="assets/img/properties/property-08.jpg">
-                                    </a>
-                                </div><!-- /.property-slide -->
-
-
-                                
-
-                                
-                                <div class="property-slide">
-                                    <a href="assets/img/properties/property-10.jpg" class="image-popup">
-                                        <div class="overlay"><h3></h3></div>
-                                        <img alt="" src="assets/img/properties/property-10.jpg">
-                                    </a>
-                                </div><!-- /.property-slide -->
-
-                                <div class="property-slide">
-                                    <a href="assets/img/properties/ca1.jpg" class="image-popup">
-                                        <div class="overlay"><h3></h3></div>
-                                        <img alt="" src="assets/img/properties/ca1.jpg">
-                                    </a>
-                                </div><!-- /.property-slide -->
-
-                                 <div class="property-slide">
-                                    <a href="assets/img/properties/ca2.jpg" class="image-popup">
-                                        <div class="overlay"><h3></h3></div>
-                                        <img alt="" src="assets/img/properties/ca2.jpg">
-                                    </a>
-                                </div><!-- /.property-slide -->
-
-                                 <!-- /.property-slide -->
-                                 <div class="property-slide">
-                                    <a href="assets/img/properties/ca4.jpg" class="image-popup">
-                                        <div class="overlay"><h3></h3></div>
-                                        <img alt="" src="assets/img/properties/ca4.jpg">
+                                        <img alt="" src="assets/img/properties/auto1.jpg">
                                     </a>
                                 </div><!-- /.property-slide -->
 
                                 
-
-                                 <div class="property-slide">
-                                    <a href="assets/img/properties/ca6.jpg" class="image-popup">
+                                <div class="property-slide">
+                                    <a href="assets/img/properties/auto2.jpg" class="image-popup">
                                         <div class="overlay"><h3></h3></div>
-                                        <img alt="" src="assets/img/properties/ca6.jpg">
+                                        <img alt="" src="assets/img/properties/auto2.jpg">
                                     </a>
                                 </div><!-- /.property-slide -->
 
-
-
+                                
+                                <div class="property-slide">
+                                    <a href="assets/img/properties/auto3.jpg" class="image-popup">
+                                        <div class="overlay"><h3></h3></div>
+                                        <img alt="" src="assets/img/properties/auto3.jpg">
+                                    </a>
+                                </div><!-- /.property-slide -->
+                                <div class="property-slide">
+                                    <a href="assets/img/properties/auto4.jpg" class="image-popup">
+                                        <div class="overlay"><h3></h3></div>
+                                        <img alt="" src="assets/img/properties/auto4.jpg">
+                                    </a>
+                                </div><!-- /.property-slide -->
                             </div><!-- /.property-carousel -->
-
-
                         </section>
                         <div class="row">
                             
                             <div class="col-md-12 col-sm-12">
                                 <section id="description">
-                                    <header><h2>{{lang.calor_title2}}</h2></header>
-                                    <p>{{lang.calor_p1}}</p>
-                                    
+                                    <header><h2>{{lang.auto_5}}</h2></header>
+                                    <p>{{lang.auto_1}}</p>
+                                    <header><h2>{{lang.mision_01}}</h2></header>
+                                    <p>{{lang.auto_2}}</p>
+                                    <header><h2>{{lang.vision_01}}</h2></header>
+                                    <p>{{lang.auto_3}}</p>
+
+                                   
 
 
                                 </section><!-- /#description -->
-
                                 
 
-                                                        <section id="property-gallery">
+                                <br>
 
-                            
-                        </section>
-                               
+                                <section id="property-features">
+                                   
+                                    
+                                </section><!-- /#property-features -->
 
 
                                 
@@ -296,12 +281,36 @@
                                 
                                 
                             </div><!-- /.col-md-8 -->
-                            
+
+
+                            <div class="col-md-12 col-sm-12">
+                                <section id="description">
+                                    
+
+                                </section><!-- /#description -->
+                                
+                                
+
+                                
+                                
+                                
+                                
+                            </div><!-- /.col-md-8 -->
+
+
+
+                            <div class="col-md-12 col-sm-12">
+                                
+                                
+                                
+                            </div><!-- /.col-md-12 -->
                         </div><!-- /.row -->
                     </section><!-- /#property-detail -->
                 </div><!-- /.col-md-9 -->
                 <!-- end Property Detail Content -->
- <div class="col-md-3 col-sm-3">
+
+                <!-- sidebar -->
+                <div class="col-md-3 col-sm-3">
                     <section id="sidebar">
                         
                         <aside id="featured-properties">
@@ -310,14 +319,15 @@
                             
                         </aside><!-- /#featured-properties -->
                         <aside id="our-guides">
-                            <header><h3>{{lang.calor_share}}</h3></header>
+                            <header><h3>{{lang.mig_share_title}}</h3></header>
 
-                        
-                                <figure class="subtitle">
+                            
+
+                        <figure class="subtitle">
 
                              <hr class="divider">
                                 
-                                 <a  class="image"><img alt="" src="assets/img/darkicn.png" width="19%">PDF</a>
+                                 <a  class="image"><img alt="" src="assets/img/darkicn.png" width="30%">PDF</a>
                                 <a href="IAFM PRESENTACION.pdf">DESCARGA</a>
 
                             
@@ -330,9 +340,6 @@
                     </section><!-- /#sidebar -->
                 </div><!-- /.col-md-3 -->
                 <!-- end Sidebar -->
-
-
-
             </div><!-- /.row -->
         </div><!-- /.container -->
     </div>

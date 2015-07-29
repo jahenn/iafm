@@ -17,7 +17,7 @@
 
      <link href='http://fonts.googleapis.com/css?family=Titillium+Web:200,300,600,400,700,900' rel='stylesheet' type='text/css'>
 
-    <title>Área Caliente | I.A.F.M.</title>
+    <title>Seguridad | I.A.F.M.</title>
 
     <style type="text/css">
 
@@ -41,10 +41,9 @@
    
 
     </style>
-
-   <script type="text/javascript" src="/assets/js/angular.min.js"></script>
-    <script type="text/javascript" src="/assets/js/angular-route.min.js"></script>
     
+    <script type="text/javascript" src="/assets/js/angular.min.js"></script>
+    <script type="text/javascript" src="/assets/js/angular-route.min.js"></script>
     
     <script type="text/javascript">
         var app = angular.module("app", ["ngRoute"]);
@@ -72,9 +71,13 @@
         });
     </script>
 
+   
+
 </head>
 
 <body class="page-sub-page page-property-detail" id="page-top">
+
+
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -86,16 +89,18 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
+
+
+
 <!-- Wrapper -->
 <div class="wrapper" data-ng-app="app" data-ng-controller="controller">
     <script type="text/ng-template" id="languageTemplate"></script>
     <ng-view></ng-view>
-    
     <!-- Navigation -->
     <div class="navigation fibredark ">
-        
+      
         <div class="container">
-            <header class="navbar" id="top" role="banner">
+           <header class="navbar" id="top" role="banner">
                 
 
                 <div class="navbar-header">
@@ -193,8 +198,8 @@
         <!-- Breadcrumb -->
         <div class="container">
             <ol class="breadcrumb">
-                <li><a href="#">Soldadura</a></li>
-                <li class="active">En áltas temperaturas</li>
+                <li><a >{{lang.seguridad_36}}</a></li>
+                <li class="active">{{lang.seguridad_37}}</li>
             </ol>
         </div>
         <!-- end Breadcrumb -->
@@ -205,89 +210,84 @@
                 <div class="col-md-9 col-sm-9">
                     <section id="property-detail">
                         <header class="property-title">
-                            <h1>{{lang.calor_title1}}</h1>
-                            <figure>{{lang.calor_subtitle1}}</figure>
+                            <h1>{{lang.seguridad_38}}</h1>
+                            <figure>{{lang.seguridad_10}}</figure>
                             <span class="actions">
                                 <!--<a href="#" class="fa fa-print"></a>-->
                                 
                             </span>
                         </header>
+
+<!-- /.p
+
                         <section id="property-gallery">
-
                             <div class="owl-carousel property-carousel">
-
                                 <div class="property-slide">
-                                    <a href="assets/img/properties/property-08.jpg" class="image-popup">
+                                    <a href="assets/img/properties/property-06.jpg" class="image-popup">
                                         <div class="overlay"><h3></h3></div>
-                                        <img alt="" src="assets/img/properties/property-08.jpg">
+                                        <img alt="" src="assets/img/properties/property-06.jpg">
                                     </a>
-                                </div><!-- /.property-slide -->
-
-
-                                
+                                </div>
 
                                 
                                 <div class="property-slide">
-                                    <a href="assets/img/properties/property-10.jpg" class="image-popup">
+                                    <a href="assets/img/properties/property-detail-03.jpg" class="image-popup">
                                         <div class="overlay"><h3></h3></div>
-                                        <img alt="" src="assets/img/properties/property-10.jpg">
+                                        <img alt="" src="assets/img/properties/property-detail-03.jpg">
                                     </a>
-                                </div><!-- /.property-slide -->
-
-                                <div class="property-slide">
-                                    <a href="assets/img/properties/ca1.jpg" class="image-popup">
-                                        <div class="overlay"><h3></h3></div>
-                                        <img alt="" src="assets/img/properties/ca1.jpg">
-                                    </a>
-                                </div><!-- /.property-slide -->
-
-                                 <div class="property-slide">
-                                    <a href="assets/img/properties/ca2.jpg" class="image-popup">
-                                        <div class="overlay"><h3></h3></div>
-                                        <img alt="" src="assets/img/properties/ca2.jpg">
-                                    </a>
-                                </div><!-- /.property-slide -->
-
-                                 <!-- /.property-slide -->
-                                 <div class="property-slide">
-                                    <a href="assets/img/properties/ca4.jpg" class="image-popup">
-                                        <div class="overlay"><h3></h3></div>
-                                        <img alt="" src="assets/img/properties/ca4.jpg">
-                                    </a>
-                                </div><!-- /.property-slide -->
-
+                                </div>
                                 
-
-                                 <div class="property-slide">
-                                    <a href="assets/img/properties/ca6.jpg" class="image-popup">
+                                <div class="property-slide">
+                                    <a href="assets/img/properties/property-12.jpg" class="image-popup">
                                         <div class="overlay"><h3></h3></div>
-                                        <img alt="" src="assets/img/properties/ca6.jpg">
+                                        <img alt="" src="assets/img/properties/property-12.jpg">
                                     </a>
-                                </div><!-- /.property-slide -->
-
-
-
-                            </div><!-- /.property-carousel -->
-
-
+                                </div>
+                                <div class="property-slide">
+                                    <a href="assets/img/properties/property-02.jpg" class="image-popup">
+                                        <div class="overlay"><h3></h3></div>
+                                        <img alt="" src="assets/img/properties/property-02.jpg">
+                                    </a>
+                                </div>
+                            </div>
                         </section>
+
+ty-carousel -->
+
+
+
+
                         <div class="row">
                             
                             <div class="col-md-12 col-sm-12">
                                 <section id="description">
-                                    <header><h2>{{lang.calor_title2}}</h2></header>
-                                    <p>{{lang.calor_p1}}</p>
-                                    
+                                    <header><h2>{{lang.seguridad_01}}</h2></header>
+                                    <p>{{lang.seguridad_02}}</p>
+                                    <p>{{lang.seguridad_03}}</p>
+                                    <p>{{lang.seguridad_04}}</p>
+
+                                    <p>{{lang.seguridad_05}}</p>
+                                    <p>{{lang.seguridad_06}}</p>
+                                    <p>{{lang.seguridad_07}}</p>
+                                    <p>{{lang.seguridad_08}}</p>
 
 
                                 </section><!-- /#description -->
+                                <section id="property-features">
+                                    <header><h2>{{lang.seguridad_09}}</h2></header>
+                                    <ul class="list-unstyled property-features-list">
+                                        
+                                        <li>{{lang.seguridad_10}}</li>
+                                        <li>{{lang.seguridad_11}}</li>
+                                        <li>{{lang.seguridad_12}}</li>
+                                        <li>{{lang.seguridad_13}}</li>
+                                       
+                                        
+                                    </ul>
+                                </section><!-- /#property-features -->
 
-                                
+                                <br>
 
-                                                        <section id="property-gallery">
-
-                            
-                        </section>
                                
 
 
@@ -296,12 +296,85 @@
                                 
                                 
                             </div><!-- /.col-md-8 -->
+
+
+                            <div class="col-md-12 col-sm-12">
+                                <section id="description">
+                                    <header><h2>{{lang.seguridad_14}}</h2></header>
+                                    <p>{{lang.seguridad_15}}</p>
+                                    <p>{{lang.seguridad_16}}</p>
+                                    <p>{{lang.seguridad_17}}</p>
+                                    <p>{{lang.seguridad_18}}</p>
+                                    <p>{{lang.seguridad_19}}</p>
+                                    <p>{{lang.seguridad_20}}</p>
+                                    <p>{{lang.seguridad_21}}</p>
+                                    <p>{{lang.seguridad_22}}</p>
+                                    <p>{{lang.seguridad_23}}</p>
+                                    <p>{{lang.seguridad_24}}</p>
+                                    <p>{{lang.seguridad_25}}</p>
+                                    <p>{{lang.seguridad_26}}</p>
+
+                                    
+                                    <p>{{lang.seguridad_27}}</p>
+                                    <p>{{lang.seguridad_28}}</p>
+                                    <p>{{lang.seguridad_29}}</p>
+                                    <p>{{lang.seguridad_30}}</p>
+                                    <p>{{lang.seguridad_31}}</p>
+                                    <p>{{lang.seguridad_32}}</p>
+                                    <p>{{lang.seguridad_33}}</p>
+                                    <p>{{lang.seguridad_34}}</p>
+                                    <p>{{lang.seguridad_35}}</p>
+                                    <p>{{lang.seguridad_36}}</p>
+                                    <p>{{lang.seguridad_36}}</p>
+                                    <p>{{lang.seguridad_37}}</p>
+                                    <p>{{lang.seguridad_38}}</p>
+
+
+                                </section><!-- /#description -->
+
+
+
+                                <section id="partners" class="block">
+            <div class="container">
+                <header class="section-title"><h2>{{lang.legend1}}</h2></header>
+                <div class="logos">
+
+
+                    <div class="logo"><a href="http://www.rofa-ag.de/en/moll-automatisierung" target="_blank"><img src="assets/img/ATURM.png" alt=""></a></div>
+
+
+                    <div class="logo"><a href="http://www.ferrobotics.at/" target="_blank"> <img src="assets/img/ICS.png" alt=""></a></div>
+                    
+                    <div class="logo"><a href="http://www.audi.com.mx/mx/brand/es2.html" target="_blank"><img src="assets/img/MARIOFF.png" alt=""></a></div>
+
+                    <div class="logo"><a href="http://www.vw.com.mx/es.html" target="_blank"><img src="assets/img/SOVA.png" alt=""></a></div>
+
+
+                </div>
+
+
+               
+            </div><!-- /.container -->
+        </section>
+                                
+                                
+
+                                
+                                
+                                
+                                
+                            </div><!-- /.col-md-8 -->
+
+
+
                             
                         </div><!-- /.row -->
                     </section><!-- /#property-detail -->
                 </div><!-- /.col-md-9 -->
                 <!-- end Property Detail Content -->
- <div class="col-md-3 col-sm-3">
+
+                <!-- sidebar -->
+                <div class="col-md-3 col-sm-3">
                     <section id="sidebar">
                         
                         <aside id="featured-properties">
@@ -310,18 +383,22 @@
                             
                         </aside><!-- /#featured-properties -->
                         <aside id="our-guides">
-                            <header><h3>{{lang.calor_share}}</h3></header>
+                            <header><h3>{{lang.mig_share_title}}</h3></header>
 
                         
-                                <figure class="subtitle">
+                                <div class="fb-share-button" data-href="http://i-afm.com/mig.html" data-layout="box_count"></div>
 
-                             <hr class="divider">
-                                
-                                 <a  class="image"><img alt="" src="assets/img/darkicn.png" width="19%">PDF</a>
-                                <a href="IAFM PRESENTACION.pdf">DESCARGA</a>
+                                <br>
+                                <br>
 
-                            
-                            </figure>
+
+                                <div>
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-hashtags="IAFM">Tweet</a>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    
+                                </div>
 
 
                            
@@ -330,9 +407,6 @@
                     </section><!-- /#sidebar -->
                 </div><!-- /.col-md-3 -->
                 <!-- end Sidebar -->
-
-
-
             </div><!-- /.row -->
         </div><!-- /.container -->
     </div>

@@ -65,51 +65,95 @@
     <script type="text/ng-template" id="languageTemplate"></script>
     <ng-view></ng-view>
     <div class="navigation fibredark ">
-        <div class="secondary-navigation idioma">
-            <div class="container">
-                <div class="contact">
-                <br>
-                
-                    
-                </div>
-                <div class="user-area">
-                    <div class="actions">
-                        
-                    </div>
-                    <div class="language-bar">
-                        <a href="#/es" class="active"><img src="assets/img/flags/gb.png" alt="">Español</a>
-                        <a href="#/de"><img src="assets/img/flags/de.png" alt="">Deuch</a>
-                        <a href="#"><img src="assets/img/flags/es.png" alt=""></a>
-                    </div>
-                </div>
-                <nav class="collapse navbar-collapse bs-navbar-collapse navbar-left" role="navigation">
-                    <ul class="nav navbar-nav nave" >
-                        <li><a href="mig.html#/{{lang_str}}">{{lang.menu1}}</a></li>
-                        <li><a href="tig.html#/{{lang_str}}">{{lang.menu2}}</a></li>
-                        <li><a href="electro.html#/{{lang_str}}">{{lang.menu3}}</a></li>
-                        <li><a href="calor.html#/{{lang_str}}">{{lang.menu4}}</a></li>
-                        <li><a href="montaje.html#/{{lang_str}}">{{lang.menu5}}</a></li>
-                        <li><a href="automatizacion.html#/{{lang_str}}">{{lang.menu6}}</a></li>
-                        <li><a href="nosotros.html#/{{lang_str}}">{{lang.menu7}}</a></li>
-                        <li><a href="contacto.html#/{{lang_str}}">{{lang.menu8}}</a></li>
-                    </ul>
-                </nav><!-- /.navbar collapse-->
-            </div>
-        </div>
+
+
         <div class="container">
             <header class="navbar" id="top" role="banner">
                 
 
                 <div class="navbar-header">
+
                     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <div class="navbar-brand nav" id="brand">
-                        <a href="index.html#/{{lang_str}}"><img src="assets/img/logo.png" width="28%" alt="brand"></a>
+
+
+                <div class="navbar-brand nav" id="brand">
+
+
+                        <a href="index.html#/{{lang_str}}"><img src="assets/img/logo.png" width="15%" alt="brand"></a>
+                    
+
+
                     </div>
+
+
+
+
+
+
+
+
+
+
+               <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+
+                        <div class="language-bar">
+
+
+
+
+                        <a href="#/es" class="active">Español</a>
+                        <a href="#/de">Deuch</a>
+                        <a href="#">English</a>
+                    </div>
+
+
+
+
+                    <ul class="nav navbar-nav">
+
+                   
+
+
+                        <li class="active has-child"><a href="#">Soldadura</a>
+                            <ul class="child-navigation">
+                                <li><a href="mig.html#/{{lang_str}}">{{lang.menu1}}</a></li>
+                                <li><a href="tig.html#/{{lang_str}}">{{lang.menu2}}</a></li>
+                                <li><a href="electro.html#/{{lang_str}}">{{lang.menu3}}</a></li>
+                                <li><a href="calor.html#/{{lang_str}}">{{lang.menu4}}</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-child"><a href="#">Soluciones</a>
+                            <ul class="child-navigation">
+                                <li><a href="montaje.html#/{{lang_str}}">{{lang.menu5}}</a></li>
+                                <li><a href="auto.html#/{{lang_str}}">{{lang.menu6}}</a></li>
+                                <li><a href="seguridad.html#/{{lang_str}}">{{lang.menu10}}</a></li>
+                                <li><a href="proveedores.html#/{{lang_str}}">{{lang.menu11}}</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-child"><a href="#">Nosotros</a>
+                            <ul class="child-navigation">
+                                <li><a href="nosotros.html#/{{lang_str}}">{{lang.menu7}}</a></li>
+                                <li><a href="contacto.html#/{{lang_str}}">{{lang.menu8}}</a></li>
+                                <li><a href="projects.html#/{{lang_str}}">{{lang.menu9}}</a></li>
+                            </ul>
+                        </li>
+
+                        
+                    </ul>
+
+                    
+
+
+                </nav><!-- /.navbar collapse-->
+
+
+
                 </div>
                 
                 
@@ -167,6 +211,22 @@
                 <img alt="" src="assets/img/slide-03.jpg" >
             </div>
 
+            <div class="slide">
+                <div class="container">
+                    <div class="overlay">
+                        <div class="info">
+                            <div class="tag price">{{lang.slide1_title}}</div>
+                            <h3>{{lang.slide1_tile}}</h3>
+                            <figure></figure>
+                        </div>
+                        <hr>
+                        
+                    </div>
+                </div>
+                <img alt="" src="assets/img/properties/2mon1.jpg">
+            </div>
+
+
             
         </div>
     </div>
@@ -181,6 +241,73 @@
                 </div>
             </div>
         </section><!-- /#banner -->
+
+
+
+
+         <section class="center">
+                            <br>
+
+                            
+
+                            <h3 class="no-border2">
+
+                            {{lang.mision_01}}</h3>
+
+                            <br>
+                            <br>
+
+
+                            <p>{{lang.mision_02}}</p>
+                                
+                            
+
+                            
+
+
+
+                             <h3 class="no-border2">
+
+                             {{lang.vision_01}}
+
+                             <br>
+                             <br>
+
+                             {{lang.vision_02}}
+
+                             <br><br>
+                            
+                            {{lang.vision_03}}
+                                
+                            </h3>
+
+
+
+                              
+                            <br>
+                            <br>
+
+                            
+
+                              
+
+
+                            
+
+
+                            
+                        </section>
+
+
+                        
+
+
+
+<!-- 
+
+
+
+
         
         <section id="price-drop" class=" block">
             <div class="container">
@@ -209,8 +336,8 @@
                                     </ul>
                                 </div>
                             </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
+                        </div>
+                    </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="property">
                             <a href="tig.html">
@@ -230,8 +357,8 @@
                                     </ul>
                                 </div>
                             </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
+                        </div>
+                    </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="property">
                             <a href="electro.html">
@@ -252,8 +379,8 @@
                                     </ul>
                                 </div>
                             </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
+                        </div>
+                    </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="property">
                             <a href="calor.html">
@@ -262,7 +389,7 @@
                                 </div>
                                 <div class="overlay">
                                     <div class="info">
-                                        <div class="tag price">{{lang.tile4}}</div>
+                                        <div class="tag price">{{lang.menu4}}</div>
                                         
                                         <figure></figure>
                                     </div>
@@ -274,11 +401,18 @@
                                     </ul>
                                 </div>
                             </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
-                </div><!-- /.row-->
-            </div><!-- /.container -->
-        </section><!-- /#price-drop -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+/#new-properties-->
+
+
+
+
         
         <section id="new-properties" class="block">
             <div class="container">
@@ -291,7 +425,7 @@
                         <div class="property">
                             <a href="peru.html">
                                 <div class="property-image">
-                                    <img alt="" src="assets/img/properties/property-09.jpg">
+                                    <img alt="" src="assets/img/slide-033.jpg">
                                 </div>
                                 <div class="overlay">
                                     <div class="info">
@@ -307,7 +441,7 @@
                         <div class="property">
                             <a href="montaje.html">
                                 <div class="property-image">
-                                    <img alt="" src="assets/img/properties/mon1.jpg">
+                                    <img alt="" src="assets/img/audiproj.png">
                                 </div>
                                 <div class="overlay">
                                     <div class="info">
@@ -323,7 +457,7 @@
                         <div class="property">
                             <a href="mig.html">
                                 <div class="property-image">
-                                    <img alt="" src="assets/img/properties/property-06.jpg">
+                                    <img alt="" src="assets/img/mm.png">
                                 </div>
                                 <div class="overlay">
                                     <div class="info">
@@ -352,6 +486,11 @@
                         </div><!-- /.property -->
                     </div><!-- /.col-md-3 -->
                 </div><!-- /.row-->
+
+                <!-- /.row
+
+
+
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <div class="property">
@@ -367,8 +506,8 @@
                                     
                                 </div>
                             </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
+                        </div>
+                    </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="property">
                             <a href="mig.html">
@@ -383,8 +522,8 @@
                                     
                                 </div>
                             </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
+                        </div>
+                    </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="property">
                             <a href="monterrey.html">
@@ -399,8 +538,8 @@
                                     
                                 </div>
                             </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
+                        </div>
+                    </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="property">
                             <a href="calor.html">
@@ -415,9 +554,20 @@
                                     
                                 </div>
                             </a>
-                        </div><!-- /.property -->
-                    </div><!-- /.col-md-3 -->
-                </div><!-- /.row-->
+                        </div>
+                    </div>
+                </div>
+
+
+
+                /.row-->
+
+
+
+
+
+
+
             </div><!-- /.container-->
         </section><!-- /#new-properties-->
 
@@ -444,7 +594,7 @@
 
 
                         <div class="wrapper">
-                            <p class="title"><i class="fa fa-phone"></i>{{lang.contact1}}</p>
+                            <p class="title"><i class="fa fa-phone"></i>{{lang.contactx1}}</p>
                             
                         </div>
 
@@ -493,7 +643,9 @@
 
                     <div class="logo"><a href="http://www.melon.cl/" target="_blank"> <img src="assets/img/logo-partner12.png" alt=""></a></div>
                     
-                    <div class="logo"><a href="http://www.argos.co/Colombia" target="_blank"><img src="assets/img/logo-partner13.png" alt=""></a></div>
+                    <div class="logo"><a href="http://www.argos.co/Colombia" target="_blank"><img src="assets/img/argg.png" alt=""></a></div>
+
+                    <div class="logo"><a href="http://www.scheuch.com/" target="_blank"><img src="assets/img/logo-partner19.png" alt=""></a></div>
 
 
                     
@@ -715,14 +867,7 @@ Rohr Schweissprufung Wig-Mig-Mag = 45º</a>
                                         
                                         
                                     </section>
-                                    <section id="social">
-                                        <header><h3>{{lang.folow_us}}</h3></header>
-                                        <div class="agent-social">
-                                            
-                                            <a href="https://www.facebook.com/pages/IAFM/698192943605665?sk=info&tab=page_info" target="blank" 
-                                            class="fa fa-facebook btn btn-grey-dark"></a>
-                                        </div>
-                                    </section><!-- /#social --><!-- /.property -->
+                                    
                         </aside><!-- /#featured-properties -->
                         
 

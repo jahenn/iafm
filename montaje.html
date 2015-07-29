@@ -41,6 +41,35 @@
    
 
     </style>
+    
+    <script type="text/javascript" src="/assets/js/angular.min.js"></script>
+    <script type="text/javascript" src="/assets/js/angular-route.min.js"></script>
+    
+    <script type="text/javascript">
+        var app = angular.module("app", ["ngRoute"]);
+        app.config(function($routeProvider){
+            $routeProvider
+            .when("/:language", {
+                templateUrl: "languageTemplate",
+                controller: "languageController"
+            })
+            .otherwise({
+                redirectTo: "/es"
+            });
+        });
+        app.controller("controller", function($scope){});
+        app.controller("languageController", function($scope, $routeParams, $http){
+             var idioma = $routeParams.language || "es";
+            $http.get("/home_language", {
+                params: {
+                    language: idioma
+                }
+            }).success(function(data){
+                $scope.$parent.lang = data;
+                $scope.$parent.lang_str = idioma;
+            });
+        });
+    </script>
 
     
 
@@ -61,7 +90,9 @@
 
 
 <!-- Wrapper -->
-<div class="wrapper">
+<div class="wrapper" data-ng-app="app" data-ng-controller="controller">
+    <script type="text/ng-template" id="languageTemplate"></script>
+    <ng-view></ng-view>
     <!-- Navigation -->
     <div class="navigation fibredark ">
         
